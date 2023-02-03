@@ -4,4 +4,4 @@ SELECT * FROM STUDENT where BIRTHDAY > DATEADD(year, -20, CURRENT_DATE) and GROU
 SELECT * FROM STUDENT where NAME = 'Mike' or GROUPNUMBER = 4 or GROUPNUMBER = 5 or GROUPNUMBER = 6;
 SELECT * FROM PAYMENT where PAYMENT_DATE > DATEADD(month, -8, CURRENT_DATE);
 SELECT * FROM STUDENT where (lower(name) like concat (lower ('A'), '%'));
-SELECT * FROM STUDENT where (NAME = 'Roxi' and GROUPNUMBER = 4) or (NAME = 'Tallie' and GROUPNUMBER = 9);
+SELECT * FROM STUDENT where (name LIKE 'Roxi%' AND groupnumber = 4) OR (name LIKE 'Tallie%' AND groupnumber = 9);
